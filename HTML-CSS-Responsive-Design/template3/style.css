@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400&display=swap');
+ :root {
+    --font: 'Roboto Mono', monospace;
+    --main-color: rgb(24, 23, 23);
+    --main-padding: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: var(--main-padding);
+}
+
+h2 {
+    padding: var(--main-padding);
+    text-transform: uppercase;
+    font-family: var(--font);
+    color: var(--main-color);
+}
+
+.container {
+    padding: var(--main-padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80vh;
+}
+
+.img-container {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%
+}
+
+.description-container {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    padding: var(--main-padding);
+}
+
+.description-container h1 {
+    margin-bottom: 20px;
+    color: var(--main-color);
+    width: 50%;
+}
+
+.description-container h1::first-letter {
+    text-transform: uppercase;
+}
+
+.description-container p {
+    margin-bottom: 30px;
+    color: var(--main-color);
+    width: 50%;
+}
+
+.description-container p::first-letter {
+    text-transform: capitalize;
+}
+
+.description-container button {
+    all: unset;
+    width: fit-content;
+    padding: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+@media (max-width:480px) {
+    body {
+        font-size: 0.7rem;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .description-container {
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .description-container h1,
+    .description-container p {
+        width: 100%;
+    }
+}
