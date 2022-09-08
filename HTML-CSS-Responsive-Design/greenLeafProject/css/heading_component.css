@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Cagliostro&family=Inter:wght@200;300;400;500;600;700;800&family=Snippet&display=swap');
+
+/* Start Components */
+.main-heading {
+    text-align: center;
+  }
+  .main-heading h2 {
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #1BA965;
+  }
+  .main-heading p {
+    width: 550px;
+    margin: 0 auto 80px;
+    max-width: 100%;
+    line-height: 2;
+    color: #777;
+    text-transform: capitalize;
+    font-style: italic;
+  }
+  /* End Components */

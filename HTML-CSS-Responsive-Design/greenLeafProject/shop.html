@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/leaf.png" sizes="32x32 32x32" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/heading_component.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <title>SHOP</title>
+</head>
+<body>
+    <!-- start shopping -->
+    <div class="shop">
+        <div class="container">
+            <div class="main-heading">
+                <h2>Shop now</h2>
+            </div>
+            <div class="shopping">
+                <div class="product">
+                    <div class="small-side">
+                        <div class="pro-images" id="one">
+                            <img src="images/img1.png" alt="">
+                        </div>
+                        <div class="pro-images" id="two">
+                            <img src="images/img2.png" alt="">
+                        </div>
+                        <div class="pro-images" id="three">
+                            <img src="images/img3.png" alt="">
+                        </div>
+                        <div class="pro-images" id="four">
+                            <img src="images/img4.png" alt="">
+                        </div>
+                        <div class="pro-images" id="five">
+                            <img src="images/img1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="main-show">
+                        <img id="showImg" src="images/img1.png" alt="">
+                    </div>
+                </div>
+                <div class="description">
+                    <p class="price">800 DZD</p>
+                    <h3>PLANT NAME</h3>
+                    <div class="custom-review">
+                        <div class="rate">
+                            <span class="stars"><i class="fa-sharp fa-solid fa-star"></i></span>
+                            <span class="stars"><i class="fa-sharp fa-solid fa-star"></i></span>
+                            <span class="stars"><i class="fa-sharp fa-solid fa-star"></i></span>
+                            <span class="stars"><i class="fa-sharp fa-solid fa-star"></i></span>
+
+                        </div>
+                        <p class="rev">(10 customers reviews)</p>
+                    </div>
+                    <div class="short-descript">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quo voluptatum veritatis quod provident in vitae? Quae, porro? Quisquam omnis eos ipsa a provident possimus necessitatibus. Odit suscipit a ducimus?</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius debitis assumenda cupiditate blanditiis, commodi voluptatibus numquam, magnam consequuntur minima ad, vitae harum tempora tenetur ullam neque! Veniam assumenda voluptates adipisci.</p>
+                    </div>
+                    <div class="cart">
+                            <div class="input-quantity">
+                                <input type="text" placeholder="Quantity">
+                            </div>
+                            <button type="submit">ADD TO CART</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end shopping -->
+    <div class="comments">
+        <div class="container">
+            <ul class="nav-tab">
+                <li class="descript-tab links active" onclick="showData(event, 'descript')">
+                    <a href="">Description</a>
+                </li>
+                <li class="conmment-tab links" onclick="showData(event, 'review')">
+                    <a href="">Reviews (0)</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="descript" class="descript-content show">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                     sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                       ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit
+                         esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                          occaecat cupidatat non proident, sunt in culpa qui officia
+                           deserunt mollit anim id est laborum. Sed ut perspiciatis unde
+                            omnis iste natus error sit voluptatem accusantium doloremque
+                             laudantium, totam rem aperiam.
+                </div>
+                <div id="review" class="comment-content show">
+                    <h2>REVIEW</h2>
+                    <p>There are no reviews yet.</p>
+                    <form class="review-form">
+                        <div class="form-rate">
+                            <label>Your rating</label>
+                            <div class="rate">
+                                <span class="stars"><i class="fa-sharp fa-solid fa-star"></i></span>
+                                <span class="stars"><i class="fa-sharp fa-solid fa-star"></i></span>
+                                <span class="stars"><i class="fa-sharp fa-solid fa-star"></i></span>
+                                <span class="stars"><i class="fa-sharp fa-solid fa-star"></i></span>
+                                <span class="stars"><i class="fa-sharp fa-solid fa-star"></i></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Your message</label>
+                            <textarea class="review-input" cols="30" rows="10" placeholder="Put Review Here"></textarea>
+                            <div class="form-inputs">
+                                <input type="text" class="review-input" placeholder="Name*" required>
+                                <input type="text" class="review-input" placeholder="Email*" required>
+                            </div>
+                            
+                        </div>
+                        <button class="sub-review">Submit Review</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Start footer-->
+    <footer>
+        <div class="container">
+            <div class="links">
+                <!-- box 1 -->
+                <div class="link">
+                    <h3>Custumer services</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Shipping</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- box 2 -->
+                <div class="link">
+                    <h3>Resources</h3>
+                        <ul>
+                            <li><a href="">Find Your Plant</a></li>
+                            <li><a href="">Plant Care Library</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Free Online Cources</a></li>
+                        </ul>
+                </div>
+                <!-- box 3 -->
+                <div class="link">
+                    <h3>Get your plant.</h3>
+                        <ul>
+                            <li><p>Get plant care tips, exclusive offers, & event invites straight to your inbox. No spam ever.</p></li>
+                            <li><input type="text" placeholder="Enter Your Email Here"></li>
+                            <li><input type="submit" value="subscribe"></li>
+                            <li>
+                                <ul class="social">
+                                    <li><i class="fa-brands fa-facebook"></i></li>
+                                    <li><i class="fa-brands fa-instagram"></i></li>
+                                    <li><i class="fa-brands fa-twitter"></i></li>
+                                    <li><i class="fa-brands fa-pinterest"></i></li>
+                                    <li><i class="fa-brands fa-youtube"></i></li>
+                                </ul>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>COPYRIGHT@2022: FATIMA B.</p>
+                <img src="images/logo.png" alt="">
+            </div>
+        </div>
+    </footer>
+<!-- End footer-->
+<script src="js/shop.js"></script>
+</body>
+</html>
